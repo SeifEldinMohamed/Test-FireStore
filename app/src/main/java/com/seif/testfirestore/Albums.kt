@@ -1,7 +1,13 @@
 package com.seif.testfirestore
 
 data class Albums(
-    val id:String,
-    val albumTitle:String,
-    val releasedYear:String
+    var id:String = "",
+    var albumTitle:String = "",
+    var releasedYear:String = "",
+    var songs:MutableList<Song>? = null
 )
+
+//data class Song(
+//    var id:String = "",
+//    var title:String = ""
+//    )
